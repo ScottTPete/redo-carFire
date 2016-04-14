@@ -1,0 +1,28 @@
+<div class='carContainer'>
+	
+	<h1> {{car.make}} {{car.model}} </h1>
+	<ul>
+		<li>
+			Year: {{car.year}}
+		</li>
+		<li>
+			Price: {{car.price}}
+		</li>
+		<li>
+			Mileage: {{car.mileage}}
+		</li>
+
+	</ul>
+	<div class="commentsContainer">
+		
+		<h2>Comments</h2>
+		<div class='carCommentContainer' ng-repeat="comment in comments">
+
+			{{comment.name}}:
+			<br>
+			{{comment.content}}
+			
+
+		</div>
+	</div>
+</div>
