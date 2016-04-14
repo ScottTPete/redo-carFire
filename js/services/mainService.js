@@ -1,5 +1,5 @@
 angular.module('carApp')
-	.service('mainSvc', function() {
+	.service('mainSvc', function(Firebase) {
 	
 	var url = 'https://stp-carfire.firebaseio.com/Cars/';
 	
